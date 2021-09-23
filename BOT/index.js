@@ -9,6 +9,6 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-// Login to Discord with your client's token
+// Login with discord token
 client.login(token);
 

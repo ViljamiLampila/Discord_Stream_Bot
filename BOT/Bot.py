@@ -10,7 +10,6 @@ import json
 with open("config.json", "r") as config:
     data = json.load(config)
     token = data["token"]
-    password = data["password"]
     prefix = data["prefix"]
 
 

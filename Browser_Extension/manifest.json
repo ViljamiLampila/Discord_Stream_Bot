@@ -1,15 +1,24 @@
 {
-    "name": "Browser_extension",
-    "version": "1.0",
-    "description": "Build an Basic Extension!",
-    "permissions": ["activeTab"],
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "img/icon16.png",
-        "32": "img/icon32.png",
-        "48": "img/icon48.png"
-      }
-    },
-    "manifest_version": 2
+  "manifest_verison": 2,
+
+  "name": "Temp_name",
+  "description": "extension to recive sent packages from node, containing string url",
+  "vesrion": "0,1",
+
+
+  "permissions": [
+
+  ],
+  
+  "browser_acrtion":{
+    "default_icon":"img/img16.png",
+    "default_popup" : "html/popup.html"
+
   }
+
+
+
+
+
+
+}

@@ -1,5 +1,6 @@
 from logging import exception, raiseExceptions
 from os import getenv
+import scraper
 import json
 import discord
 import validators
@@ -7,7 +8,7 @@ import subprocess
 from discord.ext import commands
 
 
-class main():
+class main(discord.Client):
 
     async def on_message(self, message):
 
@@ -21,21 +22,9 @@ class main():
 
                 #if (validators.url(message.content) == True):
                     subprocess.run(["vlc", var2])
-                    
+                    scraper.scrape()
             else:
                 raiseExceptions()
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 client = commands.Bot(command_prefix="!")

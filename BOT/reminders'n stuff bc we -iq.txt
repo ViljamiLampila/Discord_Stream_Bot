@@ -1,0 +1,30 @@
+to do list:
+
+get node to talk to shell.
+get python to give youtube url to node.
+make node to setup the camrea as video feed.
+get url add it to the shell argument discord.js --> nodejs --> shell.
+make pattern matching for youtube urls.
+
+/yee
+
+
+order wich the program will work in:
+pre requirements:
+setup camera as video feed with nodejs.
+/req
+
+discord.js --> shell --> terminal --> launch vlc with url
+
+
+/useful stuff
+
+
+
+terminal commands for vlc shell script:
+
+pkill bl-media-player to kill vlc
+vlc <url> to run vlc with url
+
+/shell stuff
+

@@ -38,6 +38,8 @@ CODE THAT MIGHT BE USEFUL LATER:
 
                 else: 
                     subprocess.run(sp)
+///////////////////////////////////////////
+
 
 
 

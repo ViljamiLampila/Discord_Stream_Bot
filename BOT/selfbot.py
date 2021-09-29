@@ -36,4 +36,4 @@ class main(discord.Client):
 
 client = main()
 
-client.run("token here")
+client.run("token here ")

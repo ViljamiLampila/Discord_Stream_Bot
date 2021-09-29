@@ -5,12 +5,12 @@ import validators
 import subprocess
 from discord.ext import commands
 
+def nodePuppet():
+    subprocess.Popen(["node", "./BOT/BrowserPuppet.js"])
 
 class main(discord.Client):
 
-
     async def on_message(self, message):
-
         if message.author == self.user:
             return
 
@@ -18,6 +18,7 @@ class main(discord.Client):
         if "!play" in message.content:
             userText = message.content
             var1, var2 = userText.split(" ") #checking if the url provided is valid
+            nodePuppet()
             if ((var1 == "!play") and (validators.url(var2) == True)):
 
                    

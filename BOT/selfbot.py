@@ -1,7 +1,5 @@
 from logging import exception, raiseExceptions
-from bs4 import BeautifulSoup
-import requests
-import json
+from subprocess import Popen
 import discord
 import validators
 import subprocess
@@ -10,30 +8,28 @@ from discord.ext import commands
 
 class main(discord.Client):
 
+
     async def on_message(self, message):
 
         if message.author == self.user:
             return
+
 
         else:
             userText = message.content
             var1, var2 = userText.split(" ")
             if ((var1 == "!play") and (validators.url(var2) == True)):
 
-                #if (validators.url(message.content) == True):
-                    r = requests.get(var2)
+                   
+                sp = subprocess.Popen(["vlc", var2])               
+                poll = sp.poll()
 
-                    soup =BeautifulSoup(r.content, "lxml")
+                if poll is None:
+                    subprocess.Popen(["vlc --started-from-file --playlist-enqueue", var2])
 
-                    time = soup.find("span", {"class": "ytp-time-duration"}).get_text()
-                    
-
-
-                    subprocess.run(["vlc", var2])
-
-                    
-            else:
-                raiseExceptions()
+                else:           
+                    sp()
+                    raiseExceptions()
 
 
 #client = commands.Bot(command_prefix="!")

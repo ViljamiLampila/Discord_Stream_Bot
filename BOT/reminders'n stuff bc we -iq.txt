@@ -28,3 +28,17 @@ vlc <url> to run vlc with url
 
 /shell stuff
 
+CODE THAT MIGHT BE USEFUL LATER:
+#check if subprocess is alive and return None if alive
+    sp = subprocess(["vlc", var2])
+            poll = sp.poll()
+
+            if poll is None:
+
+
+                else: 
+                    subprocess.run(sp)
+
+
+
+/end of dummiecode

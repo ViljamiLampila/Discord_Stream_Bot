@@ -15,8 +15,8 @@ const puppeteer = require("puppeteer");
     
       // Enter username and password
     
-      await page.type('[name="email"]', 'splashdamagetf@gmail.com');
-      await page.type('[name="password"]', 'kaninpaska21');
+      await page.type('[name="email"]', 'login here');
+      await page.type('[name="password"]', 'password here');
     
       await Promise.all([
         page.click('[type="submit"]'),

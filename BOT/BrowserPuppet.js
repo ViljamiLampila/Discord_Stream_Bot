@@ -15,8 +15,8 @@ const puppeteer = require("puppeteer");
     
       // Enter username and password
     
-      await page.type('[name="email"]', 'login here');
-      await page.type('[name="password"]', 'password here ');
+      await page.type('[name="email"]', 'splashdamagetf@gmail.com');
+      await page.type('[name="password"]', 'kaninpaska21');
     
       await Promise.all([
         page.click('[type="submit"]'),
@@ -25,8 +25,17 @@ const puppeteer = require("puppeteer");
         }),
       ]);
 
-            // Join server
+      //popup checks because Discord really do be like that
 
+
+//   if ((await page.$('[aria-label="Close"]')) !== null) {
+//     await page.click('[aria-label="Close"]');
+//     await page.evaluate(() => {
+//         return;
+//       });
+//   }
+
+            // Join server
       await Promise.all([
         page.waitForSelector('[href="/channels/735810947175809045/735810947612016640"]'),
       ]);

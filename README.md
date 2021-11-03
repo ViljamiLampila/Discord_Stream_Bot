@@ -3,6 +3,10 @@ Experimental discord bot for streaming internet media.
 
 Setup guide will be added at a later date.
 
+## Required packages
+
+> adding soon
+
 ## The way it works
 
 #### discord.py-[self]

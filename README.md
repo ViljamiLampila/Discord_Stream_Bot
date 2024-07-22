@@ -1,3 +1,5 @@
+#This build is very outdated and unfinished, main problem is to get a steady video stream.
+DO NOT download the build and expect it to work out of the box.
 # Discord_Stream_Bot
 Experimental discord bot for streaming internet media.
 
